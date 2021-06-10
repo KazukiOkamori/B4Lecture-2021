@@ -75,6 +75,7 @@ class PCA:
         idx = np.count_nonzero(ccr < 0.9)
         ax.plot(idx, ccr[idx], "ms", ms=10)
         ax.text(idx, ccr[idx]-0.05, f"({idx}, {ccr[idx]})")
+        ax.set_title(f"cumulative contribution ratio({self.fname})")
 
 
 # main
